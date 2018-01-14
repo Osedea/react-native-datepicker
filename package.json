@@ -3,9 +3,7 @@
   "version": "1.1.1",
   "description": "A Datetimepicker for Android and iOs for react-native",
   "main": "DateTimePicker.js",
-  "dependencies": {
-    "react-native-osd-simple-button": "^1.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "react": "15.0.2",
     "react-native": "0.26.2"
