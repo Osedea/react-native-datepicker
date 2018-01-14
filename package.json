@@ -4,6 +4,7 @@
   "description": "A Datetimepicker for Android and iOs for react-native",
   "main": "DateTimePicker.js",
   "dependencies": {
+    "prop-types": "^15.6.0",
     "react-native-osd-simple-button": "https://github.com/truca/react-native-osd-simple-button"
   },
   "devDependencies": {
