@@ -11,6 +11,7 @@ import {
     View,
 } from 'react-native';
 import Button from 'react-native-osd-simple-button';
+import PropTypes from 'prop-types'
 
 const colors = {
     background: '#FFFFFF',
@@ -66,22 +67,22 @@ const styles = StyleSheet.create({
 
 export default class DateTimePicker extends Component {
     static propTypes = {
-        date: React.PropTypes.oneOfType([
-            React.PropTypes.date,
-            React.PropTypes.string,
+        date: PropTypes.oneOfType([
+            PropTypes.date,
+            PropTypes.string,
         ]),
-        iosDoneButtonText: React.PropTypes.string,
-        iosDoneButtonStyle: Button.propTypes.containerStyle,
-        iosClosePickerButtonTextContainerStyle: Button.propTypes.textContainerStyle,
-        iosClosePickerButtonTextStyle: Button.propTypes.textStyle,
-        label: React.PropTypes.string,
-        mode: React.PropTypes.oneOf([
+        iosDoneButtonText: PropTypes.string,
+        iosDoneButtonStyle: PropTypes.containerStyle,
+        iosClosePickerButtonTextContainerStyle: PropTypes.textContainerStyle,
+        iosClosePickerButtonTextStyle: PropTypes.textStyle,
+        label: PropTypes.string,
+        mode: PropTypes.oneOf([
             'datetime',
             'date',
             'time',
         ]),
-        onChange: React.PropTypes.func.isRequired,
-        renderAndroidButton: React.PropTypes.func,
+        onChange: PropTypes.func.isRequired,
+        renderAndroidButton: PropTypes.func,
     };
 
     static defaultProps = {
